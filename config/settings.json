@@ -1,0 +1,31 @@
+# 口播剪辑配置
+# 保存位置: ~/.claude/skills/videocut/config/settings.json
+
+{
+  "auto_delete": {
+    "silence_over": 1.0,
+    "auto_delete_silence": true,
+    "auto_delete_repetition": false,
+    "auto_delete_filler": false,
+    "confidence_threshold": 0.9
+  },
+  "thresholds": {
+    "silence_min": 0.5,
+    "repetition_chars": 5,
+    "filler_words": ["嗯", "啊", "呃", "那个", "就是", "这个这个"]
+  },
+  "audio": {
+    "sample_rate": 16000,
+    "channels": 1
+  },
+  "output": {
+    "format": "mp4",
+    "video_codec": "libx264",
+    "audio_codec": "aac",
+    "crf": 23
+  },
+  "review_server": {
+    "port": 8899,
+    "auto_save_interval": 30000
+  }
+}
